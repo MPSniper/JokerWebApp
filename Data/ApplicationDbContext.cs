@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using JokerWebApp.Models;
 
 namespace JokerWebApp.Data
 {
@@ -10,6 +9,9 @@ namespace JokerWebApp.Data
             : base(options)
         {
         }
-        public DbSet<JokerWebApp.Models.Joke>? Joke { get; set; }
+        public DbSet<JokerWebApp.Models.Joke>? Joke
+        {
+            get; set;
+        }
     }
 }
